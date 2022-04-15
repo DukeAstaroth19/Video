@@ -1,0 +1,57 @@
+*{
+    box-sizing: border-box;
+}
+body , html{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+ul , li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+.wrapper{
+    min-height: 100vh;
+}
+
+.fullvideo{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullvideo::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 5;
+}
+
+.fullvideo__title{
+    font-size: 300px;
+    color: white;
+    z-index: 10;
+}
+
+.movies{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
